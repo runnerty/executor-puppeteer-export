@@ -27,7 +27,10 @@
 {
   "id": "puppeteer_default",
   "html": "./workspace/templates/template_one.html",
-  "launch": { "headless": false, "executablePath": "/path/to/Chrome" },
+  "launch": {
+    "headless": false,
+    "executablePath": "/path/to/Chrome"
+  },
   "authenticate": {
     "username": "my_usr_name",
     "password": "my_pass"
