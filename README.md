@@ -1,0 +1,80 @@
+# Executor for [Runnerty]: Puppeteer wrapper to export html to PDF/image 
+
+#### EJS Compatible
+
+### Configuration sample:
+```json
+{
+  "id": "puppeteer_default",
+  "type": "@runnerty-executor-puppeteer-export"
+}
+```
+
+### Plan sample:
+```json
+{
+  "id": "puppeteer_default",
+  "html": "./workspace/templates/template_one.html",
+  "pdf": {
+    "path": "sample.pdf",
+    "format": "A4"
+  }
+}
+```
+
+### Plan advanced:
+```json
+{
+  "id": "puppeteer_default",
+  "html": "./workspace/templates/template_one.html",
+  "launch": { "headless": false, "executablePath": "/path/to/Chrome" },
+  "authenticate": {
+    "username": "my_usr_name",
+    "password": "my_pass"
+  },
+  "userAgent": "Runnerty",
+  "extraHTTPHeaders": {
+    "my_header": "my_header_value"
+  },
+  "bypassCSP": false,
+  "offlineMode": false,
+  "cacheEnabled": true,
+  "javaScriptEnabled": true,
+  "cookie": {
+    "name": "string",
+    "value": "string"
+  },
+  "viewport": {
+      "width":1024,
+      "height":900
+      },
+  "geolocation": {
+      "latitude": 36.6,
+      "longitude": 2.36
+      },
+  "options": {
+    "waitUntil": "load"
+  },
+  "pdf": {
+    "path": "sample.pdf",
+    "format": "A4",
+    "margin": {
+    "top": "20px",
+    "left": "20px",
+    "right": "20px",
+    "bottom": "20px"
+    }
+  },
+  "screenshot": {
+    "path": "sample.png",
+    "type": "png"
+  },
+  "args":{
+    "subject":"Sample plan",
+    "message":"Value for template one EJS var"
+  }
+}
+```
+
+
+[Runnerty]: http://www.runnerty.io

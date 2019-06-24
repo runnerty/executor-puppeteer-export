@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "@runnerty-executor-puppeteer-export",
+  "definitions": {
+    "config": {
+      "type": "object",
+      "required": ["id", "type"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "pattern": "@runnerty-executor-puppeteer-export"
+        }
+      }
+    },
+    "params": {
+      "type": "object",
+      "required": ["id", "html"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "html": {
+          "type": "string"
+        },
+        "args": {
+          "type": "object"
+        },
+        "options": {
+          "type": "object"
+        },
+        "userAgent": {
+          "type": "object"
+        },
+        "extraHTTPHeaders": {
+          "type": "object"
+        },
+        "launch": {
+          "type": "object"
+        },
+        "authenticate": {
+          "type": "object",
+          "properties": {
+            "username": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          }
+        },
+        "bypassCSP": {
+          "type": "boolean"
+        },
+        "offlineMode": {
+          "type": "boolean"
+        },
+        "cacheEnabled": {
+          "type": "boolean"
+        },
+        "javaScriptEnabled": {
+          "type": "boolean"
+        },
+        "cookie": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        },
+        "viewport": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "type": "number"
+            },
+            "height": {
+              "type": "number"
+            }
+          }
+        },
+        "geolocation": {
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "type": "number"
+            },
+            "longitude": {
+              "type": "number"
+            }
+          }
+        },
+        "pdf": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "format": {
+              "type": "string"
+            },
+            "margin": {
+              "type": "object",
+              "properties": {
+                "top": {
+                  "type": "string"
+                },
+                "left": {
+                  "type": "string"
+                },
+                "right": {
+                  "type": "string"
+                },
+                "bottom": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "screenshot": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

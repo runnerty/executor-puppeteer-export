@@ -1,0 +1,32 @@
+{
+  "name": "@runnerty/executor-puppeteer-export",
+  "version": "1.0.0",
+  "description": "Runnerty module: Puppeteer wrapper to export html to PDF/image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Coderty",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runnerty/executor-puppeteer-export.git"
+  },
+  "keywords": [
+    "runnerty",
+    "html-pdf",
+    "html-screenshot",
+    "puppeteer",
+    "pdf",
+    "screenshot",
+    "image"
+  ],
+  "bugs": {
+    "url": "https://github.com/runnerty/executor-puppeteer-export/issues"
+  },
+  "homepage": "https://github.com/runnerty/executor-puppeteer-export#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "puppeteer": "^1.18.0"
+  }
+}
