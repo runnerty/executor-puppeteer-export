@@ -32,7 +32,7 @@
           "type": "object"
         },
         "userAgent": {
-          "type": "object"
+          "type": "string"
         },
         "extraHTTPHeaders": {
           "type": "object"
