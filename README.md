@@ -10,11 +10,16 @@
   <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg">
 </a>
 
-# Executor for [Runnerty]: Puppeteer wrapper to export html to PDF/image 
+# Puppeteer executor for [Runnerty]:
+Puppeteer wrapper to export html to PDF/image with [ejs] template support.
 
-#### EJS Compatible
+### Installation:
+```bash
+npm i @runnerty/executor-puppeteer-export
+```
 
 ### Configuration sample:
+Add in [config.json]:
 ```json
 {
   "id": "puppeteer_default",
@@ -23,6 +28,7 @@
 ```
 
 ### Plan sample:
+Add in [plan.json]:
 ```json
 {
   "id": "puppeteer_default",
@@ -35,6 +41,7 @@
 ```
 
 ### Plan advanced:
+Add in [plan.json]:
 ```json
 {
   "id": "puppeteer_default",
@@ -93,8 +100,11 @@
 
 
 [Runnerty]: http://www.runnerty.io
-[downloads-image]: https://img.shields.io/npm/dm/@runnerty/executor-shell.svg
-[npm-url]: https://www.npmjs.com/package/@runnerty/executor-shell
-[npm-image]: https://img.shields.io/npm/v/@runnerty/executor-shell.svg
-[david-badge]: https://david-dm.org/runnerty/executor-shell.svg
-[david-badge-url]: https://david-dm.org/runnerty/executor-shell
+[downloads-image]: https://img.shields.io/npm/dm/@runnerty/executor-puppeteer-export.svg
+[npm-url]: https://www.npmjs.com/package/@runnerty/executor-puppeteer-export
+[npm-image]: https://img.shields.io/npm/v/@runnerty/executor-puppeteer-export.svg
+[david-badge]: https://david-dm.org/runnerty/executor-puppeteer-export.svg
+[david-badge-url]: https://david-dm.org/runnerty/executor-puppeteer-export
+[config.json]: http://docs.runnerty.io/config/
+[plan.json]: http://docs.runnerty.io/plan/
+[ejs]: https://ejs.co

@@ -44,7 +44,6 @@ class puppeteerExportExecutor extends Execution {
         if (opt.html.startsWith('file://')) opt.html = opt.html.replace('file://', '');
         let content = fs.readFileSync(opt.html, 'utf8');
         if (opt.args) {
-          console.log(opt.args, Object.keys(opt.args).length);
           try {
             if (opt.args && Object.keys(opt.args).length) {
               content = ejs.render(content, opt.args);
