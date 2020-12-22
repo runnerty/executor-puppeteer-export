@@ -1,0 +1,8 @@
+{
+  "executors": [
+    {
+      "id": "puppeteer_default",
+      "type": "@runnerty-executor-puppeteer-export"
+    }
+  ]
+}

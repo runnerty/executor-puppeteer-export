@@ -35,7 +35,8 @@ Add in [plan.json]:
   "html": "./workspace/templates/template_one.html",
   "pdf": {
     "path": "sample.pdf",
-    "format": "A4"
+    "format": "A4",
+    "printBackground": false
   }
 }
 ```
@@ -80,6 +81,7 @@ Add in [plan.json]:
   "pdf": {
     "path": "sample.pdf",
     "format": "A4",
+    "printBackground": true,
     "margin": {
     "top": "20px",
     "left": "20px",
