@@ -1,13 +1,13 @@
 {
   "name": "@runnerty/executor-puppeteer-export",
-  "version": "3.0.0-alpha",
+  "version": "3.0.0",
   "description": "Runnerty module: Puppeteer wrapper to export html to PDF/image",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint '**/*.js' && prettier --check '**'"
   },
-  "author": "Coderty",
+  "author": "Runnerty Tech",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -29,12 +29,12 @@
   "dependencies": {
     "ejs": "3.1.5",
     "puppeteer": "5.5.0",
-    "@runnerty/module-core": "alpha"
+    "@runnerty/module-core": "3.0.1"
   },
   "devDependencies": {
-    "eslint": "^7.16.0",
+    "eslint": "^7.17.0",
     "eslint-config-prettier": "^7.1.0",
-    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.1.2"
   }
 }
