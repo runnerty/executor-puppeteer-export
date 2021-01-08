@@ -1,0 +1,59 @@
+{
+  "$schema": "https://raw.githubusercontent.com/runnerty/schemas/master/schemas/3.0/plan.json",
+  "chains": [
+    {
+      "id": "CHAIN_PUPPETEER_SAMPLES",
+      "name": "PUPPETEER module example chain",
+      "defaults_processes": {
+        "notifications": {
+          "on_start": [
+            {
+              "id": "console_default",
+              "message": "@GETDATE('YYYY-MM-DD HH:mm:ss') START: PROCESS @GV(PROCESS_ID)"
+            }
+          ],
+          "on_fail": [
+            {
+              "id": "console_default",
+              "message": "@GETDATE('YYYY-MM-DD HH:mm:ss') ERROR: PROCESS @GV(PROCESS_ID): @GV(PROCESS_EXEC_ERR_OUTPUT)",
+              "mode": "error"
+            }
+          ],
+          "on_end": [
+            {
+              "id": "console_default",
+              "message": "@GETDATE('YYYY-MM-DD HH:mm:ss') END: PROCESS @GV(PROCESS_ID)"
+            }
+          ]
+        }
+      },
+      "processes": [
+        {
+          "id": "PUPPETEER_WEBSITE_PDF_PROCESS",
+          "name": "PUPPETEER EXPORTS WEBSITE PDF",
+          "exec": {
+            "id": "puppeteer_default",
+            "html": "https://runnerty.io",
+            "pdf": {
+              "printBackground": true,
+              "path": "sample.pdf",
+              "format": "A4"
+            }
+          }
+        },
+        {
+          "id": "PUPPETEER_TEMPLATE_SCREENSHOT_PROCESS",
+          "name": "PUPPETEER EXPORTS TEMPLATE TO PNG",
+          "exec": {
+            "id": "puppeteer_default",
+            "html": "https://runnerty.io",
+            "screenshot": {
+              "path": "sample.png",
+              "type": "png"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

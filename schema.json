@@ -121,6 +121,9 @@
                   "type": "string"
                 }
               }
+            },
+            "printBackground": {
+              "type": "boolean"
             }
           }
         },

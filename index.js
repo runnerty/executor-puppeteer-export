@@ -14,9 +14,9 @@ function stringIsAValidUrl(url) {
   }
 }
 
-const Execution = global.ExecutionClass;
+const Executor = require('@runnerty/module-core').Executor;
 
-class puppeteerExportExecutor extends Execution {
+class puppeteerExportExecutor extends Executor {
   constructor(process) {
     super(process);
   }

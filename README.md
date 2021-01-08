@@ -14,8 +14,24 @@
 Puppeteer wrapper to export html to PDF/image with [ejs] template support.
 
 ### Installation:
+Through NPM
+
 ```bash
 npm i @runnerty/executor-puppeteer-export
+```
+
+You can also add modules to your project with [runnerty-cli]
+
+```bash
+npx runnerty-cli add @runnerty/executor-puppeteer-export
+```
+
+This command installs the module in your project, adds example configuration in your `config.json` and creates an example plan of use.
+
+If you have installed [runnerty-cli] globally you can include the module with this command:
+
+```bash
+rty add @runnerty/executor-puppeteer-export
 ```
 
 ### Configuration sample:
@@ -35,7 +51,8 @@ Add in [plan.json]:
   "html": "./workspace/templates/template_one.html",
   "pdf": {
     "path": "sample.pdf",
-    "format": "A4"
+    "format": "A4",
+    "printBackground": false
   }
 }
 ```
@@ -80,6 +97,7 @@ Add in [plan.json]:
   "pdf": {
     "path": "sample.pdf",
     "format": "A4",
+    "printBackground": true,
     "margin": {
     "top": "20px",
     "left": "20px",
@@ -108,3 +126,4 @@ Add in [plan.json]:
 [config.json]: http://docs.runnerty.io/config/
 [plan.json]: http://docs.runnerty.io/plan/
 [ejs]: https://ejs.co
+[runnerty-cli]: https://www.npmjs.com/package/runnerty-cli
