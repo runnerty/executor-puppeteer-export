@@ -5,15 +5,17 @@
   <p align="center">Smart Processes Management</p>
 </p>
 
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Dependency Status][david-badge]][david-badge-url] 
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Dependency Status][david-badge]][david-badge-url]
 <a href="#badge">
-  <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg">
+<img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg">
 </a>
 
 # Puppeteer executor for [Runnerty]:
+
 Puppeteer wrapper to export html to PDF/image with [ejs] template support.
 
 ### Installation:
+
 Through NPM
 
 ```bash
@@ -35,7 +37,9 @@ rty add @runnerty/executor-puppeteer-export
 ```
 
 ### Configuration sample:
+
 Add in [config.json]:
+
 ```json
 {
   "id": "puppeteer_default",
@@ -44,7 +48,9 @@ Add in [config.json]:
 ```
 
 ### Plan sample:
+
 Add in [plan.json]:
+
 ```json
 {
   "id": "puppeteer_default",
@@ -58,7 +64,9 @@ Add in [plan.json]:
 ```
 
 ### Plan advanced:
+
 Add in [plan.json]:
+
 ```json
 {
   "id": "puppeteer_default",
@@ -84,13 +92,13 @@ Add in [plan.json]:
     "value": "string"
   },
   "viewport": {
-      "width":1024,
-      "height":900
-      },
+    "width": 1024,
+    "height": 900
+  },
   "geolocation": {
-      "latitude": 36.6,
-      "longitude": 2.36
-      },
+    "latitude": 36.6,
+    "longitude": 2.36
+  },
   "options": {
     "waitUntil": "load"
   },
@@ -99,25 +107,24 @@ Add in [plan.json]:
     "format": "A4",
     "printBackground": true,
     "margin": {
-    "top": "20px",
-    "left": "20px",
-    "right": "20px",
-    "bottom": "20px"
+      "top": "20px",
+      "left": "20px",
+      "right": "20px",
+      "bottom": "20px"
     }
   },
   "screenshot": {
     "path": "sample.png",
     "type": "png"
   },
-  "args":{
-    "subject":"Sample plan",
-    "message":"Value for template one EJS var"
+  "args": {
+    "subject": "Sample plan",
+    "message": "Value for template one EJS var"
   }
 }
 ```
 
-
-[Runnerty]: http://www.runnerty.io
+[runnerty]: http://www.runnerty.io
 [downloads-image]: https://img.shields.io/npm/dm/@runnerty/executor-puppeteer-export.svg
 [npm-url]: https://www.npmjs.com/package/@runnerty/executor-puppeteer-export
 [npm-image]: https://img.shields.io/npm/v/@runnerty/executor-puppeteer-export.svg

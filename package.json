@@ -1,6 +1,6 @@
 {
   "name": "@runnerty/executor-puppeteer-export",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Runnerty module: Puppeteer wrapper to export html to PDF/image",
   "main": "index.js",
   "scripts": {
@@ -27,13 +27,13 @@
   },
   "homepage": "https://github.com/runnerty/executor-puppeteer-export#readme",
   "dependencies": {
-    "@runnerty/module-core": "~3.0.3",
+    "@runnerty/module-core": "~3.0.5",
     "ejs": "~3.1.6",
-    "puppeteer": "~7.0.4"
+    "puppeteer": "~8.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.19.0",
-    "eslint-config-prettier": "^7.2.0",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.1.2"
   }

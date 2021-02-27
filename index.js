@@ -31,7 +31,7 @@ class puppeteerExportExecutor extends Executor {
     if (opt.authenticate) await page.authenticate(opt.authenticate);
     if (opt.geolocation) await page.setGeolocation(opt.geolocation);
     if (opt.extraHTTPHeaders) await page.setExtraHTTPHeaders(opt.extraHTTPHeaders);
-    if (opt.bypassCSP) await page.setBypassCSP(opt.bypassCSP === 'true' ? true : false);
+    if (opt.bypassCSP) await page.setBypassCSP(opt.bypassCSP === 'true');
     if (opt.hasOwnProperty('offlineMode')) await page.setOfflineMode(opt.offlineMode);
     if (opt.hasOwnProperty('cacheEnabled')) await page.setCacheEnabled(opt.cacheEnabled);
     if (opt.hasOwnProperty('javaScriptEnabled')) await page.setJavaScriptEnabled(opt.javaScriptEnabled);
