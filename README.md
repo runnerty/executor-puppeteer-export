@@ -22,18 +22,18 @@ Through NPM
 npm i @runnerty/executor-puppeteer-export
 ```
 
-You can also add modules to your project with [runnerty-cli]
+You can also add modules to your project with [runnerty]
 
 ```bash
-npx runnerty-cli add @runnerty/executor-puppeteer-export
+npx runnerty add @runnerty/executor-puppeteer-export
 ```
 
-This command installs the module in your project, adds example configuration in your `config.json` and creates an example plan of use.
+This command installs the module in your project, adds example configuration in your [config.json] and creates an example plan of use.
 
-If you have installed [runnerty-cli] globally you can include the module with this command:
+If you have installed [runnerty] globally you can include the module with this command:
 
 ```bash
-rty add @runnerty/executor-puppeteer-export
+runnerty add @runnerty/executor-puppeteer-export
 ```
 
 ### Configuration sample:
@@ -57,7 +57,7 @@ Add in [plan.json]:
   "html": "./workspace/templates/template_one.html",
   "pdf": {
     "path": "sample.pdf",
-    "format": "A4",
+    "format": "a4",
     "printBackground": false
   }
 }
@@ -104,7 +104,7 @@ Add in [plan.json]:
   },
   "pdf": {
     "path": "sample.pdf",
-    "format": "A4",
+    "format": "a4",
     "printBackground": true,
     "margin": {
       "top": "20px",
@@ -124,7 +124,7 @@ Add in [plan.json]:
 }
 ```
 
-[runnerty]: http://www.runnerty.io
+[runnerty]: https://www.runnerty.io
 [downloads-image]: https://img.shields.io/npm/dm/@runnerty/executor-puppeteer-export.svg
 [npm-url]: https://www.npmjs.com/package/@runnerty/executor-puppeteer-export
 [npm-image]: https://img.shields.io/npm/v/@runnerty/executor-puppeteer-export.svg
@@ -133,4 +133,3 @@ Add in [plan.json]:
 [config.json]: http://docs.runnerty.io/config/
 [plan.json]: http://docs.runnerty.io/plan/
 [ejs]: https://ejs.co
-[runnerty-cli]: https://www.npmjs.com/package/runnerty-cli
